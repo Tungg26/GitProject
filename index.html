@@ -4,19 +4,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Định dạng văn bản với HTML Styles</title>
+    <title>Form Đăng Ký - Thực Hành</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .form-container {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 600px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #3498db;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="date"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="date"]:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        .radio-group,
+        .checkbox-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .radio-group label,
+        .checkbox-group label {
+            font-weight: normal;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            cursor: pointer;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+            gap: 15px;
+        }
+
+        button {
+            flex: 1;
+            padding: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"] {
+            background-color: #3498db;
+            color: white;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #2980b9;
+        }
+
+        button[type="reset"] {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        button[type="reset"]:hover {
+            background-color: #c0392b;
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1 style="color: blue;">Bài viết của tôi</h1>
-
-    <p style="color: red; font-weight: bold;">Đây là đoạn văn được định dạng màu sắc</p>
-
-    <p style="text-align: center; font-style: italic;">Tôi đang học HTML Styles</p>
-
-    <p style="font-size: 20px; text-decoration: underline;">Định dạng văn bản giúp trang web đẹp hơn</p>
-
-</body>
-
-</html>
+    <!-- Phần 1: Form Đơn Giản -->
+    <div class="form-container">
+        <h2>Phần 1: Form Đơn Giản</h2>
+        <form action="#" method="POST">
+            <div class="form-group">
