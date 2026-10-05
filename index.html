@@ -4,138 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Đăng Ký - Thực Hành</title>
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f4f7f6;
-            color: #333;
-            padding: 40px 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 40px;
-        }
-
-        .form-container {
-            background-color: #ffffff;
-            width: 100%;
-            max-width: 600px;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        h2 {
-            text-align: center;
-            color: #2c3e50;
-            margin-bottom: 25px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #3498db;
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: #2c3e50;
-        }
-
-        input[type="text"],
-        input[type="email"],
-        input[type="date"],
-        select,
-        textarea {
-            width: 100%;
-            padding: 10px 12px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 15px;
-            font-family: inherit;
-            transition: border-color 0.3s ease;
-        }
-
-        input[type="text"]:focus,
-        input[type="email"]:focus,
-        input[type="date"]:focus,
-        select:focus,
-        textarea:focus {
-            border-color: #3498db;
-            outline: none;
-        }
-
-        textarea {
-            resize: vertical;
-        }
-
-        .radio-group,
-        .checkbox-group {
-            display: flex;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .radio-group label,
-        .checkbox-group label {
-            font-weight: normal;
-            display: flex;
-            align-items: center;
-            gap: 5px;
-            cursor: pointer;
-        }
-
-        .button-group {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 30px;
-            gap: 15px;
-        }
-
-        button {
-            flex: 1;
-            padding: 12px;
-            font-size: 16px;
-            font-weight: bold;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-        }
-
-        button[type="submit"] {
-            background-color: #3498db;
-            color: white;
-        }
-
-        button[type="submit"]:hover {
-            background-color: #2980b9;
-        }
-
-        button[type="reset"] {
-            background-color: #e74c3c;
-            color: white;
-        }
-
-        button[type="reset"]:hover {
-            background-color: #c0392b;
-        }
-    </style>
+    <title>Thực Hành: Danh Sách Trong CSS</title>
+    <!-- Liên kết file CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <h1>Thực Hành: Định Kiểu Danh Sách HTML/CSS</h1>
 
-    <!-- Phần 1: Form Đơn Giản -->
-    <div class="form-container">
-        <h2>Phần 1: Form Đơn Giản</h2>
-        <form action="#" method="POST">
-            <div class="form-group">
+    <!-- Phần 2 -->
+    <h2>2. Thay đổi kiểu đánh dấu danh sách</h2>
+    <ul class="list-square">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Git</li>
+    </ul>
+
+    <!-- Phần 3 -->
+    <h2>3. Thay đổi kiểu đánh dấu danh sách có thứ tự</h2>
+    <ol class="list-roman">
+        <li>Học HTML</li>
+        <li>Học CSS</li>
+        <li>Học JavaScript</li>
+        <li>Học Git</li>
+    </ol>
+
+    <!-- Phần 4 -->
+    <h2>4. Sử dụng hình ảnh làm dấu đánh dấu</h2>
+    <ul class="list-image">
+        <li>Visual Studio Code</li>
+        <li>Google Chrome</li>
+        <li>GitHub</li>
+        <li>Git</li>
+    </ul>
+
+    <!-- Phần 5 -->
+    <h2>5. Thay đổi vị trí dấu đánh dấu</h2>
+    <div class="position-demo">
+        <ul class="list-outside">
+            <li><strong>Outside (Mặc định):</strong> Dấu chấm nằm ngoài hộp nội dung của phần tử list. Khi đoạn văn bản
+                này quá dài và rớt xuống dòng, bạn sẽ thấy văn bản thẳng lề với nhau.</li>
+        </ul>
+        <ul class="list-inside">
+            <li><strong>Inside:</strong> Dấu chấm nằm thụt vào bên trong cùng khối với văn bản. Khi đoạn văn bản này quá
+                dài và rớt xuống dòng, nó sẽ bao bọc dưới cả dấu chấm.</li>
+        </ul>
+    </div>
+
+    <!-- Phần 6 -->
+    <h2>6. Sử dụng thuộc tính rút gọn list-style</h2>
+    <ul class="list-shorthand">
+        <li>Mục 1</li>
+        <li>Mục 2</li>
+        <li>Mục 3</li>
+    </ul>
+
+    <!-- Phần 7 -->
+    <h2>7. Tạo kiểu danh sách với màu sắc</h2>
+    <ul class="list-colored">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>
